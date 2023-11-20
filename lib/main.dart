@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -73,13 +75,13 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       body: SingleChildScrollView(
-        child: Stack(children: [
-          Image.asset(
-            'lib/assets/bg_top.png',
-            fit: BoxFit.fill,
-            width: double.infinity,
-             height: MediaQuery.of(context).size.height * 0.32,
-          ),
+        child: Stack(children: [Image.asset(
+              'lib/assets/bg_top.png',
+              fit: BoxFit.fill,
+              width: double.infinity,
+              height: MediaQuery.of(context).size.height * 0.32,
+            ),
+
           Padding(
             padding: EdgeInsets.only(left: 16.0),
             child: Column(

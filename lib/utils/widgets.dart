@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -76,8 +78,9 @@ Widget newItem(double size, BuildContext context, bool isLiked,
                   Text(
                     "1200 сом",
                     style: TextStyleBold(
-                        color: ColorRes.blue,
-                        fontSize: 16.0,),
+                      color: ColorRes.blue,
+                      fontSize: 16.0,
+                    ),
                   ),
                   Text(
                     "Держатель для лейки BOOU PG605",
@@ -185,7 +188,6 @@ Widget newItem4(BuildContext context) {
     child: Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: Colors.white,
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.07),
@@ -200,16 +202,16 @@ Widget newItem4(BuildContext context) {
           fit: BoxFit.cover,
         ),
         Positioned(
-            top: 26.0,
-            left: 28.0,
-            child: Text(
-              'Привет Искендер!',
-              style: TextStyleBold(
-                color: Colors.white,
-                fontSize: 18,
-              ),
+          top: 26.0,
+          left: 28.0,
+          child: Text(
+            'Привет Искендер!',
+            style: TextStyleBold(
+              color: Colors.white,
+              fontSize: 18,
             ),
           ),
+        ),
         Positioned(
           bottom: 20.0,
           left: 20.0,
@@ -378,9 +380,7 @@ Widget newColumn(
             ),
             Text(
               'Все',
-              style: TextStyleMedium(
-                  fontSize: 14.0,
-                  color: ColorRes.blue),
+              style: TextStyleMedium(fontSize: 14.0, color: ColorRes.blue),
             ),
           ],
         ),
